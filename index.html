@@ -10,7 +10,12 @@
   <meta name="author" content="Bucky Maler">
   <link rel="stylesheet" href="assets/css/main.css">
   <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script src="assets\js\common-functions.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script type="text/javascript"></script>
+
+
 
 </head>
 <body onload="startTime()">
@@ -54,13 +59,9 @@
                 <span class="name-style">
                   <h1>Muhammad Rayees N P</h1>
                 </span>
-                <button class="cta">Connect Me
-                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
-                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
-                    <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
-                  </g>
-                  </svg>
-                  <span class="btn-background"></span>
+                <button data-text="Awesome" class="button cta">
+                  <span class="actual-text">&nbsp;Connect Me&nbsp;</span>
+                  <span class="hover-text" aria-hidden="true">&nbsp;Connect Me&nbsp;</span>
                 </button>
                 <p class="software-engineer-style">Software Engineer</p>
                 <img style="width: 333px;" src="assets/img/introduction-visual.png" alt="Welcome" >
@@ -72,7 +73,7 @@
                 </a>
                 <a href="#0">
                   <h3>Experience</h3>
-                  <p class="experience-content center-texts intro-content">1.5+ Years</p>
+                  <p class="experience-content center-texts intro-content"> 2+ Years</p>
                 </a>
                 <a href="#0">
                   <h3>Familiar &amp; Frameworks</h3>
@@ -112,6 +113,15 @@
                       </div>
                       <p class="slider--item-title">Spring Boot</p>
                       <p class="slider--item-description">Worked on more than two projects, which included a loan origination system and an insurance submission for stock exchanges.</p>
+                    </a>
+                  </li>
+                  <li class="slider--item ">
+                    <a href="#0">
+                      <div class="slider--item-image">
+                        <img src="assets/img/download.png" alt="zohoCreator">
+                      </div>
+                      <p class="slider--item-title">Zoho Creator Tool</p>
+                      <p class="slider--item-description">Worked on CRM Dashboard ,using Zoho creator tool created CRM tool to monitor stock management </p>
                     </a>
                   </li>
                 </ul>
@@ -186,8 +196,8 @@
             <div class="hire">
               <h2>You want us to do</h2>
               <!-- checkout formspree.io for easy form setup -->
-              <form class="work-request">
-                <div class="work-request--options">
+              <form method="post" class="work-request">
+                <!-- <div class="work-request--options">
                   <span class="options-a">
                     <input id="opt-1" type="checkbox" value="app design">
                     <label for="opt-1">
@@ -252,8 +262,8 @@
                       Marketing
                     </label>
                   </span>
-                </div>
-                <div class="work-request--information">
+                </div> -->
+                <!-- <div class="work-request--information">
                   <div class="information-name">
                     <input id="name" type="text" spellcheck="false">
                     <label for="name">Name</label>
@@ -262,8 +272,10 @@
                     <input id="email" type="email" spellcheck="false">
                     <label for="email">Email</label>
                   </div>
-                </div>
-                <input type="submit" value="Send Request">
+                </div> -->
+                <!-- <button type="button" id="send" onclick="sendEmail()">Submit</button>  -->
+               <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdZomf23TZ38WqAN22-j1PIDFyHgY6PYUC0rRr_GDMeecy_qA/viewform?embedded=true" width="640" height="400" frameborder="2" marginheight="0" marginwidth="0">Loading…</iframe>
+                        
               </form>
             </div>
           </li>
